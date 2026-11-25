@@ -1,0 +1,15 @@
+data:
+  raw_path: "data/credit_scoring.csv"
+  test_size: 0.2
+  random_state: 42
+
+model:
+  type: "RandomForestClassifier"
+  n_estimators: 250
+  max_depth: 12
+  min_samples_split: 5
+  class_weight: "balanced"
+
+mlflow:
+  experiment_name: "Credit_Scoring_MLOps_TP"
+  registered_model_name: "CreditRiskModel"
